@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  height: 600px;
+  width: 400px;
+  border: 2px solid black;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+
+.ant {
+  position: absolute;
+  height: 42px;
+  width: 42px;
+  background-image: url("images/ant.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
